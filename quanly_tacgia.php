@@ -32,8 +32,8 @@ $data=$stm->fetchAll();
 <table border="1">
 <tr>
 	<td>Mã tác giả</td>
-	<td>Tên sach</td>
-	<td>Xoá sach</td>
+	<td>Tên tác giả</td>
+	<td>Xoá tác giả</td>
 	<td>Cập nhật tác giả</td>
 </tr>
 
@@ -43,7 +43,7 @@ foreach($data as $key=>$value)
 	?>
 	<tr>
 		<td><?php echo $value['matacgia']?></td>
-		<td><?php echo $value['hotentacgia']?></td>
+		<td><?php echo $value['hoten']?></td>
 			<td>
 			<a href="xoa.php?matacgia=<?php echo $value['matacgia'] ?>">Xoá Tác Giả</a>
 
