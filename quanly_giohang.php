@@ -35,7 +35,7 @@ if($action=='giam')
      if ($masach!='')
     {
         if (isset($tam[$masach]))
-            $tam[$masach] += 1;
+            $tam[$masach] -= 1;
         else 
             $tam[$masach]+= 0;
         if($tam[$masach]==0)
